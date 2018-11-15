@@ -27,17 +27,17 @@ AppAsset::register($this);
 <body>
 <?php $this->beginBody() ?>
 <div class="navbar navbar-expand-lg">
-    <a href="#" class="navbar-brand">SportLife</a>
+    <?= Html::a('SportLife', ['site/index'], ['class' => 'navbar-brand']) ?>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-4">
             <li class="nav-item">
                 <a href="#" class="nav-link">О нас</a>
             </li>
             <li class="nav-item">
-                <a href="news.html" class="nav-link">Новости</a>
+                <?= Html::a('Новости', ['news/index'], ['class' => 'nav-link']) ?>
             </li>
             <li class="nav-item">
-                <a href="articles.html" class="nav-link">Статьи</a>
+                <?= Html::a('Статьи', ['articles/index'], ['class' => 'nav-link']) ?>
             </li>
             <li class="nav-item">
                 <a href="#" class="nav-link">Обратная связь</a>

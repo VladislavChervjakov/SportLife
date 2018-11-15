@@ -1,6 +1,8 @@
 <?php
 
 /* @var $this yii\web\View */
+use yii\helpers\Html;
+
 
 $this->title = 'My Yii Application';
 ?>
@@ -52,7 +54,7 @@ $this->title = 'My Yii Application';
                         </p>
                     </div>
                     <div class="card-footer">
-                        <a href="" class="card-link">Read more</a>
+                        <?= Html::a('Далее', ['articles/show'], ['class' => 'card-link']) ?>
                     </div>
                 </div>
             </div>
