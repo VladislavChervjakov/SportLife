@@ -1,0 +1,130 @@
+/*header + navbar*/
+.navbar-collapse{
+    justify-content: flex-end;
+}
+.navbar{
+    z-index: 1000;
+    background: rgba(200, 200, 200, 0.79);
+}
+.nav-link{
+    color: black;
+    font-size: large;
+}
+.nav-link:hover{
+    color: black;
+    text-decoration: underline;
+}
+.navbar-brand{
+    color: black;
+}
+.navbar-brand:hover{
+    color: black;
+    text-decoration: underline;
+}
+.carousel{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+/*articles*/
+.articles{
+    margin: 35rem 0 0 0;
+    border-bottom: 1px solid rgba(200, 200, 200, 1);
+    position: relative;
+}
+.articles h3{
+    margin: 2em 0;
+}
+.articles h3 img{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+/*news*/
+.news{
+    position: relative;
+    border-bottom: 1px solid rgba(200, 200, 200, 1);
+
+}
+.news h3{
+    margin: 2em 0;
+}
+.news h3 img{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+/* broadcatst */
+.broadcasts{
+    margin-bottom: 2em;
+    position: relative;
+
+}
+.broadcasts h3{
+    margin: 2em 0;
+}
+.broadcasts h3 img{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+.broadcasts .card-img img{
+    height: 200px;
+    width: 348px;
+}
+/* footer */
+.page-footer{
+    border-top: 1px solid rgba(200, 200, 200, 1);
+
+}
+.page-footer a img{
+    width: 55px;
+    height: 55px;
+    margin-right: 35px;
+}
+.footer-copyright{
+    margin-top: -2em;
+    background: rgba(200, 200, 200, 1);
+}
+/* articles page */
+.categories{
+    background: #fff !important;
+}
+.article-page{
+    margin: 4em 0;
+    border-bottom: none;
+}
+.article-page .card{
+    margin-top: 3em;
+}
+/* news page */
+.news-page{
+    margin: 4em 0;
+    border-bottom: none;
+}
+.news-page .card{
+    margin-top: 3em;
+}
+/* article */
+.content h3{
+    margin: 1em 0;
+}
+.article-image{
+    margin-bottom: 3em;
+}
+.article-image img{
+    max-width: 100%;
+    width: 100%;
+}
+.article-text{
+    text-align: justify;
+    margin-bottom: 2em;
+}
+/* comment form */
+.panel-body{
+    padding: 2em;
+}
+.panel textarea{
+    margin-bottom: 25px;
+}
