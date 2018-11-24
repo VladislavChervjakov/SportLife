@@ -15,7 +15,7 @@ class m181124_105511_create_category_table extends Migration
         $this->createTable('category', [
             'id' => $this->primaryKey(),
             'title' => $this->string()->notNull()
-        ]);
+        ], 'CHARACTER SET utf8 COLLATE utf8_general_ci ENGINE=InnoDB');
     }
 
     /**

@@ -21,9 +21,10 @@ class m181124_111535_foreign_key_article extends Migration
      */
     public function safeDown()
     {
-        echo "m181124_111535_foreign_key_article cannot be reverted.\n";
-
-        return false;
+        $this->dropForeignKey(
+            'article_category_id',
+            'article'
+        );
     }
 
     /*
