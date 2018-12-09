@@ -31,7 +31,7 @@ AppAsset::register($this);
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-4">
             <li class="nav-item">
-                <a href="#" class="nav-link">О нас</a>
+                <?= Html::a('О нас', ['site/about'], ['class' => 'nav-link']) ?>
             </li>
             <li class="nav-item">
                 <?= Html::a('Новости', ['news/index'], ['class' => 'nav-link']) ?>
