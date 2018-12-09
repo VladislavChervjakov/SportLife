@@ -20,15 +20,16 @@
 <div class="articles article-page">
     <div class="container">
         <div class="row">
+            <?php foreach ($articles as $article): ?>
             <div class="col-md-3 col-lg-3 col-sm-12">
                 <div class="card">
                     <div class="card-img">
-                        <img align="center" src="images/polit.jpg" class="img-fluid" alt="post-photo">
+                        <img align="center" src="../images/<?= $article->img ?>" class="img-fluid" alt="post-photo">
                     </div>
                     <div class="card-body">
-                        <h4 class="card-title">Post Title</h4>
+                        <h4 class="card-title"><?= $article->title ?></h4>
                         <p class="card-text">
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            <?= $article->description ?>
                         </p>
                     </div>
                     <div class="card-footer">
@@ -36,182 +37,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-lg-3 col-sm-12">
-                <div class="card">
-                    <div class="card-img">
-                        <img align="center" src="images/polit.jpg" class="img-fluid" alt="post-photo">
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title">Post Title</h4>
-                        <p class="card-text">
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="" class="card-link">Read more</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-lg-3 col-sm-12">
-                <div class="card">
-                    <div class="card-img">
-                        <img align="center" src="images/polit.jpg" class="img-fluid" alt="post-photo">
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title">Post Title</h4>
-                        <p class="card-text">
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="" class="card-link">Read more</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-lg-3 col-sm-12">
-                <div class="card">
-                    <div class="card-img">
-                        <img align="center" src="images/polit.jpg" class="img-fluid" alt="post-photo">
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title">Post Title</h4>
-                        <p class="card-text">
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="" class="card-link">Read more</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-lg-3 col-sm-12">
-                <div class="card">
-                    <div class="card-img">
-                        <img align="center" src="images/polit.jpg" class="img-fluid" alt="post-photo">
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title">Post Title</h4>
-                        <p class="card-text">
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="" class="card-link">Read more</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-lg-3 col-sm-12">
-                <div class="card">
-                    <div class="card-img">
-                        <img align="center" src="images/polit.jpg" class="img-fluid" alt="post-photo">
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title">Post Title</h4>
-                        <p class="card-text">
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="" class="card-link">Read more</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-lg-3 col-sm-12">
-                <div class="card">
-                    <div class="card-img">
-                        <img align="center" src="images/polit.jpg" class="img-fluid" alt="post-photo">
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title">Post Title</h4>
-                        <p class="card-text">
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="" class="card-link">Read more</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-lg-3 col-sm-12">
-                <div class="card">
-                    <div class="card-img">
-                        <img align="center" src="images/polit.jpg" class="img-fluid" alt="post-photo">
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title">Post Title</h4>
-                        <p class="card-text">
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="" class="card-link">Read more</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-lg-3 col-sm-12">
-                <div class="card">
-                    <div class="card-img">
-                        <img align="center" src="images/polit.jpg" class="img-fluid" alt="post-photo">
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title">Post Title</h4>
-                        <p class="card-text">
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="" class="card-link">Read more</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-lg-3 col-sm-12">
-                <div class="card">
-                    <div class="card-img">
-                        <img align="center" src="images/polit.jpg" class="img-fluid" alt="post-photo">
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title">Post Title</h4>
-                        <p class="card-text">
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="" class="card-link">Read more</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-lg-3 col-sm-12">
-                <div class="card">
-                    <div class="card-img">
-                        <img align="center" src="images/polit.jpg" class="img-fluid" alt="post-photo">
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title">Post Title</h4>
-                        <p class="card-text">
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="" class="card-link">Read more</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-lg-3 col-sm-12">
-                <div class="card">
-                    <div class="card-img">
-                        <img align="center" src="images/polit.jpg" class="img-fluid" alt="post-photo">
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title">Post Title</h4>
-                        <p class="card-text">
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="" class="card-link">Read more</a>
-                    </div>
-                </div>
-            </div>
+            <?php endforeach; ?>
         </div>
     </div>
 </div>

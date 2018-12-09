@@ -9,12 +9,14 @@
 namespace app\controllers;
 
 
+use app\models\News;
 use yii\web\Controller;
 
 class NewsController extends Controller
 {
     public function actionIndex()
     {
-        return $this->render('index');
+        $news = News::find()->all();
+        return $this->render('index', compact('news'));
     }
 }

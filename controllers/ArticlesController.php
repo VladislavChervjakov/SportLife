@@ -10,13 +10,19 @@ namespace app\controllers;
 
 
 use yii\web\Controller;
+use app\models\Category;
+use app\models\Article;
 
 class ArticlesController extends Controller
 {
     public function actionIndex()
     {
-        return $this->render('index');
+        $articles = Article::find()->all();
+
+        return $this->render('index',compact('articles'));
     }
+
+
     public function  actionShow()
     {
         return $this->render('show');
