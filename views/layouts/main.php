@@ -40,7 +40,7 @@ AppAsset::register($this);
                 <?= Html::a('Статьи', ['articles/index'], ['class' => 'nav-link']) ?>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">Обратная связь</a>
+                <?= Html::a('Обратная связь', ['site/contact'], ['class' => 'nav-link']) ?>
             </li>
         </ul>
     </div>
