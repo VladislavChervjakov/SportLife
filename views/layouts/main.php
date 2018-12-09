@@ -27,7 +27,7 @@ AppAsset::register($this);
 <body>
 <?php $this->beginBody() ?>
 <div class="navbar navbar-expand-lg">
-    <?= Html::a('SportLife', ['site/index'], ['class' => 'navbar-brand']) ?>
+    <?= Html::a('SportLife', ['../web'], ['class' => 'navbar-brand']) ?>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-4">
             <li class="nav-item">
@@ -52,27 +52,27 @@ AppAsset::register($this);
             <div class="row">
                 <div class="col-md-12 py-5">
                     <div class="mb-5 flex-center text-center">
-                        <a class="fb-ic">
+                        <a href="https://uk-ua.facebook.com/" class="fb-ic">
                             <i class="fa fa-facebook fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
                         </a>
                         <!-- Twitter -->
-                        <a class="tw-ic">
+                        <a href="https://twitter.com/?lang=uk" class="tw-ic">
                             <i class="fa fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
                         </a>
                         <!-- Google +-->
-                        <a class="gplus-ic">
+                        <a href="https://plus.google.com/discover?hl=uk" class="gplus-ic">
                             <i class="fa fa-google-plus fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
                         </a>
                         <!--Linkedin -->
-                        <a class="li-ic">
+                        <a href="https://www.linkedin.com/" class="li-ic">
                             <i class="fa fa-linkedin fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
                         </a>
                         <!--Instagram-->
-                        <a class="ins-ic">
+                        <a href="https://www.instagram.com/" class="ins-ic">
                             <i class="fa fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
                         </a>
                         <!--Pinterest-->
-                        <a class="pin-ic">
+                        <a href="https://www.pinterest.com/" class="pin-ic">
                             <i class="fa fa-pinterest fa-lg white-text fa-2x"> </i>
                         </a>
                     </div>

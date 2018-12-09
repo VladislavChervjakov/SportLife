@@ -2,6 +2,9 @@
 
 namespace app\controllers;
 
+use app\models\Article;
+use app\models\Broadcast;
+use app\models\News;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
@@ -14,7 +17,11 @@ class SiteController extends Controller
 {
     public function actionIndex()
     {
-        return $this->render('index');
+        $articles = Article::find()->limit(3)->orderBy(['id' => SORT_DESC])->all();
+        $news = News::find()->limit(3)->orderBy(['id' => SORT_DESC])->all();
+        $broadcasts = Broadcast::find()->limit(3)->orderBy(['id' => SORT_DESC])->all();
+
+        return $this->render('index',compact('articles', 'news', 'broadcasts'));
     }
 
     public function actionAbout()

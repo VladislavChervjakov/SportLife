@@ -4,7 +4,7 @@
 use yii\helpers\Html;
 
 
-$this->title = 'My Yii Application';
+$this->title = 'Sport Life';
 ?>
 <header>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -42,15 +42,16 @@ $this->title = 'My Yii Application';
     <div class="container">
         <h3 class="text-center"><img src="images/icons/icon3.png" alt="">Статьи</h3>
         <div class="row">
-            <div class="col-md-3 col-lg-3 col-sm-12">
+            <?php foreach ($articles as $article): ?>
+            <div class="col-md-4 col-lg-4 col-sm-12">
                 <div class="card">
                     <div class="card-img">
-                        <img align="center" src="images/polit.jpg" class="img-fluid" alt="post-photo">
+                        <img align="center" src="images/news/<?= $article->img ?>" class="img-fluid" alt="post-photo">
                     </div>
                     <div class="card-body">
-                        <h4 class="card-title">Post Title</h4>
+                        <h4 class="card-title"><?= $article->title ?></h4>
                         <p class="card-text">
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            <?= $article->description ?>
                         </p>
                     </div>
                     <div class="card-footer">
@@ -58,54 +59,7 @@ $this->title = 'My Yii Application';
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-lg-3 col-sm-12">
-                <div class="card">
-                    <div class="card-img">
-                        <img align="center" src="images/polit.jpg" class="img-fluid" alt="post-photo">
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title">Post Title</h4>
-                        <p class="card-text">
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="" class="card-link">Read more</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-lg-3 col-sm-12">
-                <div class="card">
-                    <div class="card-img">
-                        <img align="center" src="images/polit.jpg" class="img-fluid" alt="post-photo">
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title">Post Title</h4>
-                        <p class="card-text">
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="" class="card-link">Read more</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-lg-3 col-sm-12">
-                <div class="card">
-                    <div class="card-img">
-                        <img align="center" src="images/polit.jpg" class="img-fluid" alt="post-photo">
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title">Post Title</h4>
-                        <p class="card-text">
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="" class="card-link">Read more</a>
-                    </div>
-                </div>
-            </div>
+            <?php endforeach; ?>
         </div>
         <h3 class="text-center"><a href="">Больше статей</a></h3>
     </div>
@@ -114,70 +68,24 @@ $this->title = 'My Yii Application';
     <div class="container">
         <h3 class="text-center"><img src="images/icons/icon2.png" alt="">Новости</h3>
         <div class="row">
-            <div class="col-md-3 col-lg-3 col-sm-12">
+            <?php foreach ($news as $one): ?>
+            <div class="col-md-4 col-lg-4 col-sm-12">
                 <div class="card">
                     <div class="card-img">
-                        <img align="center" src="images/polit.jpg" class="img-fluid" alt="post-photo">
+                        <img align="center" src="images/news/<?= $one->img ?>" class="img-fluid" alt="post-photo">
                     </div>
                     <div class="card-body">
-                        <h4 class="card-title">Post Title</h4>
+                        <h4 class="card-title"><?= $one->title ?></h4>
                         <p class="card-text">
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            <?= $one->description ?>
                         </p>
                     </div>
                     <div class="card-footer">
-                        <a href="" class="card-link">Read more</a>
+                        <a href="" class="card-link">Далее</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-lg-3 col-sm-12">
-                <div class="card">
-                    <div class="card-img">
-                        <img align="center" src="images/polit.jpg" class="img-fluid" alt="post-photo">
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title">Post Title</h4>
-                        <p class="card-text">
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="" class="card-link">Read more</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-lg-3 col-sm-12">
-                <div class="card">
-                    <div class="card-img">
-                        <img align="center" src="images/polit.jpg" class="img-fluid" alt="post-photo">
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title">Post Title</h4>
-                        <p class="card-text">
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="" class="card-link">Read more</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-lg-3 col-sm-12">
-                <div class="card">
-                    <div class="card-img">
-                        <img align="center" src="images/polit.jpg" class="img-fluid" alt="post-photo">
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title">Post Title</h4>
-                        <p class="card-text">
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="" class="card-link">Read more</a>
-                    </div>
-                </div>
-            </div>
+            <?php endforeach; ?>
         </div>
         <h3 class="text-center"><a href="">Больше новостей</a></h3>
     </div>
@@ -186,27 +94,15 @@ $this->title = 'My Yii Application';
     <div class="container">
         <h3 class="text-center"><img src="images/icons/icon1.png" alt="">Трансляции</h3>
         <div class="row">
+            <?php foreach ($broadcasts as $broadcast): ?>
             <div class="col-md-4 col-lg-4 col-sm-12">
                 <div class="card">
                     <div class="card-img">
-                        <a href="#"><img align="center" src="images/broadcast1.jpg" class="img-fluid" alt="post-photo"></a>
+                        <a href="<?= $broadcast->href ?>"><img align="center" src="images/stream/<?= $broadcast->img ?>" class="img-fluid" alt="post-photo"></a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-lg-4 col-sm-12">
-                <div class="card">
-                    <div class="card-img">
-                        <a href="#"><img align="center" src="images/broadcast2.jpg" class="img-fluid" alt="post-photo"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-lg-4 col-sm-12">
-                <div class="card">
-                    <div class="card-img">
-                        <a href="#"><img align="center" src="images/broadcast3.jpg" class="img-fluid" alt="post-photo"></a>
-                    </div>
-                </div>
-            </div>
+            <?php endforeach; ?>
         </div>
     </div>
 </div>
