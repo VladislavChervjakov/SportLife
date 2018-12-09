@@ -1,7 +1,7 @@
 <?php
 use yii\helpers\Url;
 
-$this->title = 'Статьи';
+$this->title = 'Новости';
 ?>
 
 <div class="navbar categories navbar-expand-lg">

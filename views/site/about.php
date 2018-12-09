@@ -1,9 +1,11 @@
+<?php $this->title = 'О нас' ?>
+
 <div class="content">
     <div class="container">
-        <h3 class="text-center">About us</h3>
+        <h3 class="text-center">О нас</h3>
         <div class="row">
             <div class="col-md-12 col-lg-12 col-sm-12 article-image">
-                <img src="images/sport1.jpg" alt="">
+                <img src="../images/sport1.jpg" alt="">
             </div>
             <div class="col-md-12 col-lg-12 col-sm-12 article-text">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
