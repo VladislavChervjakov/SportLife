@@ -24,7 +24,7 @@
             <div class="col-md-3 col-lg-3 col-sm-12">
                 <div class="card">
                     <div class="card-img">
-                        <img align="center" src="images/<?= $one->img ?>" class="img-fluid" alt="post-photo">
+                        <img align="center" src="../images/news/<?= $one->img ?>" class="img-fluid" alt="post-photo">
                     </div>
                     <div class="card-body">
                         <h4 class="card-title"><?= $one->title ?></h4>
@@ -33,7 +33,7 @@
                         </p>
                     </div>
                     <div class="card-footer">
-                        <a href="" class="card-link">Read more</a>
+                        <a href="" class="card-link">Далее</a>
                     </div>
                 </div>
             </div>

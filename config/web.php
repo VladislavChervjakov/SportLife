@@ -47,6 +47,7 @@ $config = [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                'articles/show/<id:\d+>' => 'articles/show',
             ],
         ],
 

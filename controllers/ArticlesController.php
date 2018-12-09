@@ -23,8 +23,10 @@ class ArticlesController extends Controller
     }
 
 
-    public function  actionShow()
+    public function  actionShow($id)
     {
-        return $this->render('show');
+        $article = Article::findOne($id);
+
+        return $this->render('show', compact('article'));
     }
 }
