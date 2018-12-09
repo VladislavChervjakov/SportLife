@@ -1,3 +1,7 @@
+<?php
+$this->title = 'Новости';
+?>
+
 <div class="navbar categories navbar-expand-lg">
     <a href="#" class="navbar-brand">Категории</a>
     <div class="collapse navbar-collapse">
@@ -33,7 +37,7 @@
                         </p>
                     </div>
                     <div class="card-footer">
-                        <a href="" class="card-link">Далее</a>
+                        <a href="<?= \yii\helpers\Url::to(['news/show', 'id' => $one->id]) ?>" class="card-link">Далее</a>
                     </div>
                 </div>
             </div>

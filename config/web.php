@@ -48,6 +48,7 @@ $config = [
             'showScriptName' => false,
             'rules' => [
                 'articles/show/<id:\d+>' => 'articles/show',
+                'news/show/<id:\d+>' => 'news/show',
             ],
         ],
 

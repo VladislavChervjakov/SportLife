@@ -19,4 +19,10 @@ class NewsController extends Controller
         $news = News::find()->all();
         return $this->render('index', compact('news'));
     }
+
+    public function actionShow($id)
+    {
+        $one = News::findOne($id);
+        return $this->render('show', compact('one'));
+    }
 }

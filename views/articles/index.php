@@ -1,3 +1,7 @@
+<?php
+    $this->title = 'Статьи';
+?>
+
 <div class="navbar categories navbar-expand-lg">
     <a href="#" class="navbar-brand">Категории</a>
     <div class="collapse navbar-collapse">

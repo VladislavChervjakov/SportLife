@@ -1,3 +1,4 @@
+<?php $this->title = $article->title ?>
 <div class="content">
     <div class="container">
         <h3 class="text-center"><?php $article->title ?></h3>
