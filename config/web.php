@@ -49,6 +49,8 @@ $config = [
             'rules' => [
                 'articles/show/<id:\d+>' => 'articles/show',
                 'news/show/<id:\d+>' => 'news/show',
+                'category/article-view/<id:\d+>' => 'category/article-view',
+                'category/news-view/<id:\d+>' => 'category/news-view',
             ],
         ],
 

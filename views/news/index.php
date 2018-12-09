@@ -1,4 +1,6 @@
 <?php
+use yii\helpers\Url;
+
 $this->title = 'Новости';
 ?>
 
@@ -6,18 +8,11 @@ $this->title = 'Новости';
     <a href="#" class="navbar-brand">Категории</a>
     <div class="collapse navbar-collapse">
         <ul class="navbar-nav mr-4">
-            <li class="nav-item">
-                <a href="#" class="nav-link">Футбол</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Баскетбол</a>
-            </li>
-            <li class="nav-item">
-                <a href="articles.html" class="nav-link">Смешаные единоборства</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Хокей</a>
-            </li>
+            <?php foreach ($categories as $category): ?>
+                <li class="nav-item">
+                    <a href="<?= Url::to(['category/news-view', 'id' => $category->id]) ?>" class="nav-link"><?= $category->title ?></a>
+                </li>
+            <?php endforeach; ?>
         </ul>
     </div>
 </div>

@@ -9,6 +9,7 @@
 namespace app\controllers;
 
 
+use app\models\Category;
 use app\models\News;
 use yii\web\Controller;
 
@@ -17,12 +18,14 @@ class NewsController extends Controller
     public function actionIndex()
     {
         $news = News::find()->all();
-        return $this->render('index', compact('news'));
+        $categories = Category::find()->all();
+        return $this->render('index', compact('news', 'categories'));
     }
 
     public function actionShow($id)
     {
+        $categories = Category::find()->all();
         $one = News::findOne($id);
-        return $this->render('show', compact('one'));
+        return $this->render('show', compact('one', 'categories'));
     }
 }
