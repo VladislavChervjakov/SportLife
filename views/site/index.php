@@ -2,6 +2,7 @@
 
 /* @var $this yii\web\View */
 use yii\helpers\Html;
+use yii\helpers\Url;
 
 
 $this->title = 'Sport Life';
@@ -61,7 +62,7 @@ $this->title = 'Sport Life';
             </div>
             <?php endforeach; ?>
         </div>
-        <h3 class="text-center"><a href="">Больше статей</a></h3>
+        <h3 class="text-center"><a href="<?= Url::to(['articles/index']) ?>">Больше статей</a></h3>
     </div>
 </div>
 <div class="news">
@@ -87,7 +88,7 @@ $this->title = 'Sport Life';
             </div>
             <?php endforeach; ?>
         </div>
-        <h3 class="text-center"><a href="">Больше новостей</a></h3>
+        <h3 class="text-center"><a href="<?= Url::to(['news/index']) ?>">Больше новостей</a></h3>
     </div>
 </div>
 <div class="broadcasts">
