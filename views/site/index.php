@@ -56,7 +56,7 @@ $this->title = 'Sport Life';
                         </p>
                     </div>
                     <div class="card-footer">
-                        <?= Html::a('Далее', ['articles/show'], ['class' => 'card-link']) ?>
+                        <?= Html::a('Далее', ["articles/show/$article->id"], ['class' => 'card-link']) ?>
                     </div>
                 </div>
             </div>
@@ -82,7 +82,7 @@ $this->title = 'Sport Life';
                         </p>
                     </div>
                     <div class="card-footer">
-                        <a href="" class="card-link">Далее</a>
+                        <a href="<?= \yii\helpers\Url::to(['news/show', 'id' => $one->id]) ?>" class="card-link">Далее</a>
                     </div>
                 </div>
             </div>
